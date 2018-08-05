@@ -1,35 +1,54 @@
 <!DOCTYPE html>
-    <html lang="en">
+
+ <html class="no-js"> 
     <head>
-    <link rel="icon" 
-          type="image/png" 
-          href="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/38284335_10212222969034383_1737679790128758784_n.jpg?_nc_cat=0&oh=7ecaf0af1302f4f1259e5f74d837613a&oe=5BC88459">
-    
-        
-
-        <title>Joel Lee</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
-
-            <h1>Joel Lee</h1>
-    
     <body>
-            <div class="content">
-                <h2>About me</h2>
-                
-                <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/38284335_10212222969034383_1737679790128758784_n.jpg?_nc_cat=0&oh=7ecaf0af1302f4f1259e5f74d837613a&oe=5BC88459" alt="Joel and son Jett">
-                <br>    
-
-
-
-                <p>Incubus has attained commercial success, reaching multi-platinum sales, as well as releasing several successful singles. After their first two albums, Fungus Amongus (1995) and S.C.I.E.N.C.E. (1997), the band earned mainstream recognition with the release of their 1999 album Make Yourself which spawned several hits, including the band's highest charting song "Drive." Success continued with the albums Morning View (2001) and A Crow Left of the Murder... (2004). Their sixth studio album, Light Grenades, debuted at No. 1 in 2006 and was followed by Incubus' first greatest hits album Monuments and Melodies in June 2009 and the band's 2011 album, If Not Now, When?. Incubus also released an EP, Trust Fall (Side A), in early 2015, and two years later, the band released their eighth studio album, titled 8, on April 21, 2017.[1] Worldwide, Incubus has sold over 23 million albums.
-
-                    <a href="http://www.incubushq.com" target="_blank">See tour dates!</a>  
-                </p>
+        <header>
+            <div class="wrapper">
+                <h1>Joel Lee</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a class="contact" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-              
-                
-   
-</body>
-<footer class="footer"></footer>  
+        </header>  
+
+        <div class="wrapper">
+
+            <h2>About Me</h2>
+
+            <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/38284335_10212222969034383_1737679790128758784_n.jpg?_nc_cat
+            =0&oh=7ecaf0af1302f4f1259e5f74d837613a&oe=5BC88459" alt="Joel and son Jett">
+
+            <p>
+            This one required an extra element inside the content area (the ".push"), to ensure that the negative margin didn't pull 
+            the footer up and cover any content. The push was also clever because it very likely didn't have any bottom margin of it's own.
+            If it did, that would have to be factored into the negative margins, and having those two numbers not in sync doesn't look quite as nice.
+            </p>
+
+            <p>
+            Notice the 70px in the calc() vs. the 50px fixed height of the footer. That's making an assumption. An assumption that the last
+            item in the content has a bottom margin of 20px. It's that bottom margin plus the height of the footer that need to be added together 
+            to subtract from the viewport height. And yeah, we're using viewport units here as another little trick to avoid having to set 100% body
+            height before you can set 100% wrapper height.
+            </p>
+
+        </div>
+        
+        <div class="clearfix"></div>
+
+        <footer>
+            &copy;2018 Joel Lee
+        </footer>
+    </body>
 </html>
