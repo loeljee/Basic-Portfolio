@@ -1,0 +1,36 @@
+    h1 { 
+        background-color: aqua;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        padding: 20px; 
+      
+        margin-top: 0px;
+    }    
+    
+    h2 {
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        color: teal
+    }
+
+    p {
+       font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+       color: teal 
+    }
+    
+    body { 
+        width: 960px;
+        background: url(../images/concrete_seamless.png) fixed center;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    img {
+        width: 300px;
+        height: auto;
+        float: left;
+        padding-right: 10px;
+    }
+
+    .footer, .push {
+        height: 50px;
+        background: black
+    }
