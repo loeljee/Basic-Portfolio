@@ -23,7 +23,7 @@ h2{
     border-bottom: 3px solid #cccccc;
     margin: 20px;
 }
-header { 
+header {
     background: #ffffff;
     height: 75px;
     border-bottom: 3px solid #cccccc;
@@ -92,7 +92,16 @@ footer {
 }
 
 html, body {
-    height: 100%;
+    height: 98%;
     margin: 0px;
 }
 
+form {
+    padding-left: 40px;
+}
+
+#submit {
+    background: #4aaaa5;
+    color: #ffffff;
+    border: 1px outset #dddddd;
+}
