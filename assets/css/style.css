@@ -11,7 +11,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    color: white;
+    color: #ffffff;
     background: #4aaaa5;
     display: inline-block;
     padding: 20px;
@@ -75,7 +75,7 @@ p {
 .contentwrapper {
     background: #ffffff;
     border: 1px solid #dddddd;
-    min-height: 80%; 
+    min-height: 85%; 
     margin-bottom: 0px;
 }
 
@@ -110,3 +110,18 @@ form {
     color: #ffffff;
     border: 1px outset #dddddd;
 }
+
+#wheelie {
+    width: 900px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home {
+    text-decoration: none;
+    color: #ffffff
+}
+
+
