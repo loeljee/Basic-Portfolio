@@ -18,6 +18,11 @@ h1 {
     margin-top: 0px;
 }
 
+h1:hover {
+    border: 3px outset #cccccc;
+    padding: 17px;
+}
+
 h2{
     padding:20px;
     border-bottom: 3px solid #cccccc;
@@ -51,6 +56,21 @@ nav a {
     position: relative;
 }
 
+#contact:hover {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+#about:hover {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+#portfolio:hover {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
 img {
     width: 300px;
     height: auto;
@@ -62,7 +82,7 @@ p {
     padding: 20px;
 }
 
-.contact {
+#contact {
     border-right: none;
     padding-right: none;
 }
@@ -75,7 +95,7 @@ p {
 .contentwrapper {
     background: #ffffff;
     border: 1px solid #dddddd;
-    min-height: 85%; 
+    min-height: 80%; 
     margin-bottom: 0px;
 }
 
@@ -100,15 +120,17 @@ form {
     padding-left: 40px;
 }
 
-#message{
-    height: 100px !important;
-    width: 400px;
-    }
 
 #submit {
     background: #4aaaa5;
     color: #ffffff;
-    border: 1px outset #dddddd;
+    border: 1px outset #cccccc;
+    padding: 8px 20px;
+    font-size: 15px;
+}
+#submit:hover {
+    border: 3px outset #cccccc;
+    padding: 6px 18px;
 }
 
 #wheelie {
@@ -124,4 +146,9 @@ form {
     color: #ffffff
 }
 
-
+.input {
+    border: 1px inset #cccccc;
+    margin-top: 5px;
+    padding: 5px;
+    width: 865px;
+}
