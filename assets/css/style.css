@@ -74,8 +74,7 @@ nav a {
     font-size: 20px;
     padding: 10px 20px;
 }
-
-img {
+#joel {
     position: relative;
     width: 300px;
     height: auto;
@@ -85,6 +84,7 @@ img {
 
 p {
     padding: 20px;
+    line-height: 20px;
 }
 
 #contact {
@@ -100,21 +100,22 @@ p {
 .contentwrapper {
     background: #ffffff;
     border: 1px solid #dddddd;
-    min-height: 80%; 
+    min-height: 100%; 
     margin-bottom: 75px;
+    bottom: 80px;
 }
 
 footer {
+
     background: #666666;
     text-align: center;
     height: 75px;
     margin: 20px -20px -20px -20px;
     border-top: 5px solid #4aaaa5;
-   
+    position: sticky;
 }
 
 .copy {
-
     padding-top: 50px;
     bottom: 0px;
 }
@@ -153,9 +154,13 @@ form {
 #wheelie {
     width: 920px;
     height: auto;
-   
-    margin:0px;
+    margin-top:0px;
     padding:20px;
+}
+
+#mario {
+    text-align: center;
+    line-height: 40px;
 }
 
 #home {
@@ -171,12 +176,23 @@ form {
 }
 
 .pics {
-    position: relative;
     float: left;
     margin: 20px 110px 20px 0px;
     width: 300px;
-    height: 250px;
-    
+    height: 250px;    
+}
+
+.pics:hover{
+    border: 3px outset #cccccc;
+    width: 294px;
+    height: 244px; 
+}
+
+.pics:active {
+    border: 1px outset #666;
+    transform: translateY(5px);
+    width: 296px;
+    height: 246px;
 }
 
 #hangman {
@@ -188,8 +204,8 @@ form {
 
 #rpg {
     background: url(../images/RPG.jpg);
-    float: right;
-    background-size: 150%
+    background-size: 150%;
+
 }
 
 #trivia {
@@ -201,7 +217,6 @@ form {
 
 #rutgers {
     background: url(../images/rutgers.jpg);
-    float: right;
     background-size: 113%;
 }
 
@@ -210,17 +225,14 @@ form {
     background-size: 110%;
     background-position: -20px 0px;
     margin-left: 110px;
+    margin-bottom: 60px;
 }
 
 #goal {
     background: url(../images/goal.png);
-    float: right;
-    background-size: 100%;
-}
-
-#goal:active {
-    border: 1px outset #666;
-    transform: translateY(5px);
+    background-size: 115%;
+    background-position: -13px 0px;
+    text-decoration: none;
 }
 
 h3 {
@@ -231,4 +243,9 @@ h3 {
     text-align: center;
     padding: 15px;
     text-decoration: none;
+}
+
+.things, img {
+    justify-content:  center;
+    display: flex;
 }
